@@ -1,0 +1,20 @@
+spring.application.name=notification-service
+server.port=8082
+
+# ===============================
+# ActiveMQ Configuration
+# ===============================
+activemq.broker-url=tcp://localhost:61616
+activemq.user=admin
+activemq.password=admin
+activemq.queue.payment-completed=payment.completed
+
+# ===============================
+# Mail Configuration (SMTP Gmail)
+# ===============================
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=your-email@gmail.com
+spring.mail.password=your-app-password
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
